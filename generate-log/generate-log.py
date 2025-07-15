@@ -1,8 +1,10 @@
 import requests
+import subprocess
 from datetime import datetime
 import os
 
 LOG_DIR = "logs"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 WEATHER_ASCII = {
     "sunny": """\
@@ -99,3 +101,8 @@ if __name__ == "__main__":
     quote_of_the_day = get_quote_of_the_day()
 
     create_log_file(date_str, location, weather_ascii, quote_of_the_day)
+
+    print("Running commit script...")
+    commit_script_path = os.path.join(SCRIPT_DIR, "../commit-script/commit-script.py")
+    subprocess.run(["python", commit_script_path], check=True)
+    
