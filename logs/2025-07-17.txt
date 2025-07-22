@@ -1,0 +1,10 @@
+Date: 2025-07-17
+Location: Leeds
+Weather:
+     .--.
+  .-(    ).
+ (___.__)__)
+Cloudy
+
+Quote of the day:
+"Half of app development is getting it to run and regretting things you've released in the past" - Sarah M 
